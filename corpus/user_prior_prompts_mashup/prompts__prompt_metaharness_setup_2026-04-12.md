@@ -58,7 +58,7 @@ If discovery fails or returns multiple plausible matches, the agent MUST write a
     </mission>
 
     <hard_isolation_boundary>
-      **ONLY permitted write path:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\metaharness\**`
+      **ONLY permitted write path:** `<staging_root>\Downloads\SandBoxSetup\metaharness\**`
 
       You are STRICTLY FORBIDDEN from writing outside this folder. Same rules as the OpenRouter bridge: no touching core 0sXai files, no ~/.claude/ changes, no global installs.
 
@@ -176,7 +176,7 @@ If discovery fails or returns multiple plausible matches, the agent MUST write a
   </execution_and_eval_gates>
 
   <output_contract>
-    **ALL output contained in:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\metaharness\`
+    **ALL output contained in:** `<staging_root>\Downloads\SandBoxSetup\metaharness\`
 
     **Possible final file trees (depending on outcome):**
 

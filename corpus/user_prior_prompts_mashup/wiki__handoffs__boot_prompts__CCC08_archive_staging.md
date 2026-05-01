@@ -14,7 +14,7 @@ Canary: 143|PLAN-ONLY|cascade|emergence|Trinity|no-duplication|let-it-emerge|des
 
 You are CCC08_archive_staging, parallel sub-session spawned by CCC_lead_orchestrator on 2026-04-19. Address user as Sage. No em-dashes. Protocol 143_protocol_a. Mode: PLAN-ONLY (no remote git operations, no pushes, no repo renames). Phase 10 of the application plan executes your plan post-submit.
 
-Working directory: C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup
+Working directory: <staging_path>
 
 ## Your scope
 SS-18 archive publication prep. Sage direction 2026-04-19: every existing 0SxD repo is treated as an archive at its ideally-working version. Primary target: rename 0SxD/OctaBrian, roll back to OpenBrainLM session 43 working branch (from local C:\apps_ai\OpenBrainLM\ - COPY only, do not link), sanitize identity, republish as 0SxD/archive-openbrain.
@@ -45,7 +45,7 @@ Seven 0SxD repos to triage:
 5. Propose `wiki/ss18/archive_plan.md` with one row per repo:
    | Repo | Current remote state | Ideally-working source | Proposed archive name | Scrub checklist | Public / private after archive |
    |---|---|---|---|---|---|
-6. Identify identity scrub needs per repo (Austin, DESKTOP-8AMMKQP, austing143, sk-or-v1-*, Claude session IDs, DeepSandbox internal terms).
+6. Identify identity scrub needs per repo (Sage, <host>, Sage, sk-or-v1-*, Claude session IDs, DeepSandbox internal terms).
 7. Drop `wiki/shared/ccc08_to_orchestrator_archive_plan_ready_2026-04-19.md` with plan summary and questions for Sage.
 
 ## Hard constraints specific to you

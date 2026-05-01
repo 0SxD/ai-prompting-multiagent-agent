@@ -1,7 +1,7 @@
 # ROLE SELECTION BRIEF
 
-**Purpose:** Decide which Anthropic job posting(s) Austin should target.
-**Requestor:** Austin Bennett Green
+**Purpose:** Decide which Anthropic job posting(s) Sage should target.
+**Requestor:** Sage
 **Issued by:** Session 2, 2026-04-20
 **Blocker status:** BLOCKS Write phase. Must resolve before resume is finalized.
 
@@ -86,7 +86,7 @@ Default recommendation framework:
 Call out:
 - Any role that requires in-office 100% (Austin prefers remote-strong with 25% in-office; Prompt Engineer Claude Code already confirmed 25%)
 - Any role requiring specific credentials Austin does not have (active ML publications, specific PhD, specific framework expertise like PyTorch production engineering)
-- Any role where the NDA-restricted Mercor phrasing hurts (roles requiring public-evidence of RL training work beyond what generalized phrasing can carry)
+- Any role where the NDA-restricted evaluation platform phrasing hurts (roles requiring public-evidence of RL training work beyond what generalized phrasing can carry)
 - Any role where the FATExDAO era is a liability (e.g., specific trust-and-safety roles where crypto history could raise questions)
 
 ---
@@ -102,7 +102,7 @@ Call out:
 - Zero-context reviewer pattern (hostile self-audit agents)
 - Research gate and destructive-command guards (PreToolUse hooks, tested)
 - Adversarial self-audit discipline (10 to 8 layer correction based on audit)
-- Mercor AI training team lead and reviewer, 200+ contracted hours, education-domain world-building
+- evaluation platform AI training team lead and reviewer, 200+ contracted hours, education-domain world-building
 
 ### Education
 - NYS Professional Teaching Certificate (active through 2031)

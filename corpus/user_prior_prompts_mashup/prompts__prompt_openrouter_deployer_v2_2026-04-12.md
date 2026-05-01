@@ -54,7 +54,7 @@
     </mission>
 
     <hard_isolation_boundary>
-      **ONLY permitted write path:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\openrouter_bridge\**`
+      **ONLY permitted write path:** `<staging_root>\Downloads\SandBoxSetup\openrouter_bridge\**`
 
       You are STRICTLY FORBIDDEN from writing, editing, or deleting ANY file outside this folder. This includes:
       - `SandBoxSetup/` root (no touching handoff, wiki, raw, SageXai_72, OpenBrainLM_sandbox, memory, prompts, agent_results_, orchestrator_*)
@@ -293,7 +293,7 @@
   </execution_and_eval_gates>
 
   <output_contract>
-    **ALL output contained in:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\openrouter_bridge\`
+    **ALL output contained in:** `<staging_root>\Downloads\SandBoxSetup\openrouter_bridge\`
 
     **Expected file tree after pause:**
     ```

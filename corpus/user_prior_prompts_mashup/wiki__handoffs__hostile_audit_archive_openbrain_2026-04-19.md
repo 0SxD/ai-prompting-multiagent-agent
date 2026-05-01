@@ -52,7 +52,7 @@ cd /tmp/audit-archive-openbrain
 git log --format="%H %ae %an %s"
 ```
 PASS: single commit, author = `Architect`, email = `maintainer@example.com`
-FAIL: multiple commits, OR any real name/email (Austin, 0SxD, sagexresearch@gmail.com, austing143)
+FAIL: multiple commits, OR any real name/email (Austin, 0SxD, sagexresearch@gmail.com, Sage)
 
 ```bash
 git log --all --format="%H %ae %an %s" | wc -l
@@ -73,13 +73,13 @@ FAIL: any file listed -- report the file and line (grep -n)
 
 ```bash
 # 2. Machine hostname
-grep -r -rl "DESKTOP-8AMMKQP" . 2>/dev/null | grep -v ".git"
+grep -r -rl "<host>" . 2>/dev/null | grep -v ".git"
 ```
 PASS: no output
 
 ```bash
 # 3. Username variants
-grep -r -rl "austing143\|austing@" . 2>/dev/null | grep -v ".git"
+grep -r -rl "Sage\|austing@" . 2>/dev/null | grep -v ".git"
 ```
 PASS: no output
 
@@ -289,7 +289,7 @@ Drop report to: `wiki/shared/audit_report_archive_openbrain_2026-04-19.md`
 
 ## Context You Should NOT Need (but available if blocked)
 
-- Full plan: `C:\Users\Austin.DESKTOP-8AMMKQP\.claude\plans\memoized-popping-newt.md`
+- Full plan: `C:\Users\Austin.<host>\.claude\plans\memoized-popping-newt.md`
 - Coordinator report: `wiki/shared/ccc08_to_orchestrator_archive_plan_ready_2026-04-19.md`
 - Scrub audit pre-scan: 245 Austin hits, 645 apps_ai hits pre-scrub. Post-scrub claimed 0.
 

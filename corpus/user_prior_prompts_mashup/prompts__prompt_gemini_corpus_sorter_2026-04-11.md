@@ -44,7 +44,7 @@
   <task_specification>
     <mission>Physically sort the entire raw/ corpus into specialty topic group folders. MOVE files (not copy) into descriptively named topic folders, then produce a master routing table and per-folder indexes. Every file must be classified and physically relocated. No file left in raw/ root when done (except the indexes themselves). The sorted folders will be directly usable for NotebookLM brain region ingestion and wiki/ population.</mission>
 
-    <source_directory>C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\raw\</source_directory>
+    <source_directory><staging_root>\Downloads\SandBoxSetup\raw\</source_directory>
     <corpus_stats>~1,639 items | ~24GB | Domains: AI/ML, quantum, cybersecurity, blockchain/DeFi, cognitive architecture, mathematics/physics, protocol/governance, education</corpus_stats>
 
     <hard_constraints>

@@ -1,7 +1,7 @@
 # Hostile Technical Audit — Handoff Prompt
 
 **To:** Third-party hostile auditor (NotebookLM / closed LM)
-**From:** Austin Green, system owner
+**From:** Sage, system owner
 **Date:** 2026-03-15
 **Subject:** Shadow B Bot Pipeline v2 Audit Package — Review Request
 

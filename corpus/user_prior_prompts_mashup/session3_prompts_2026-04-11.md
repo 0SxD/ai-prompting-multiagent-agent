@@ -14,13 +14,13 @@ You are a deep sweep research agent (Sonnet). Your task is a comprehensive, long
 MISSION: Relentlessly hunt down every file, folder, and artifact across the entire filesystem that has NOT already been cataloged by prior agents. You are the final pass — assume nothing was found unless you verify it yourself.
 
 HARD EXCLUSIONS — DO NOT SEARCH THESE (already processed):
-- C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\SageXai_72\
-- C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\OpenBrainLM_sandbox\
-- C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\
-- C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\raw\
-- C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\memory_export\
-- C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\handoff_files\
-- C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\
+- <staging_root>\Downloads\SandBoxSetup\SageXai_72\
+- <staging_root>\Downloads\SandBoxSetup\OpenBrainLM_sandbox\
+- <staging_root>\Downloads\SandBoxSetup\wiki\
+- <staging_root>\Downloads\SandBoxSetup\raw\
+- <staging_root>\Downloads\SandBoxSetup\memory_export\
+- <staging_root>\Downloads\SandBoxSetup\handoff_files\
+- <staging_root>\Downloads\SandBoxSetup\agent_results_\
 - C:\apps_ai\OpenBrainLM\
 - C:\sageXai\
 - Any node_modules, .git, __pycache__, .venv, or cache directories
@@ -31,12 +31,12 @@ SEARCH TARGETS (in this order):
    - C:\apps_ai\nautilus_trader\
    - C:\apps_ai\xD_DAI_BUILD\ (if exists)
    - Any other subdirectories
-2. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\ (EXCEPT SandBoxSetup — already done)
-3. C:\Users\Austin.DESKTOP-8AMMKQP\Documents\
-4. C:\Users\Austin.DESKTOP-8AMMKQP\Desktop\
+2. <staging_root>\Downloads\ (EXCEPT SandBoxSetup — already done)
+3. <staging_root>\Documents\
+4. <staging_root>\Desktop\
 5. D:\ (all directories EXCEPT D:\0sXai_SandBoxSetup_restore_point which is a known backup)
 6. G:\My Drive\ (Google Drive — folders >1GB from 2025/2026 only)
-7. C:\Users\Austin.DESKTOP-8AMMKQP\.claude\ (config, rules, hooks — architecture relevant)
+7. <staging_root>\.claude\ (config, rules, hooks — architecture relevant)
 8. Any other drive letters detected (E:\, F:\, etc.)
 
 SEARCH METHOD:
@@ -76,7 +76,7 @@ RUNTIME STRATEGY:
 - Skip binary files (images, videos, archives) — record their names/sizes but do not grep inside them.
 
 OUTPUT: Write results to EXACTLY this path:
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\deep_sweep_2026-04-11.md
+<staging_root>\Downloads\SandBoxSetup\agent_results_\deep_sweep_2026-04-11.md
 
 FORMAT:
 ## Section 1: Drive/Directory Inventory
@@ -115,7 +115,7 @@ CONSTRAINTS:
 
 ```
 Run /autoresearch:learn on the following directory:
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\SageXai_72\sageXai_72_nblm_and additional_offline_resources\
+<staging_root>\Downloads\SandBoxSetup\SageXai_72\sageXai_72_nblm_and additional_offline_resources\
 
 CONTEXT: This folder contains 140+ files that are the source corpus for the 0sXai operating system and FxD protocol. Contents include:
 - 17 research PDFs (agent architecture, neural networks, quantum walks, fluid dynamics, cryptography)
@@ -135,7 +135,7 @@ GOAL: Produce a structured, comprehensive inventory of this entire corpus. For e
 6. Cross-references to other files in the corpus
 
 OUTPUT: Write the learn report to:
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\autoresearch_learn_corpus_2026-04-11.md
+<staging_root>\Downloads\SandBoxSetup\agent_results_\autoresearch_learn_corpus_2026-04-11.md
 
 This output will feed directly into the wiki/ build (Karpathy WikiLM format). The wiki scaffold already exists with: index.md, WIKI_SCHEMA.md, concepts/, entities/, sources/, comparisons/.
 
@@ -170,12 +170,12 @@ CONSTRAINTS:
 You are the bit_buddy Opus orchestrator resuming Session 2 of the 0sXai project.
 
 READ THESE FILES FIRST (in this exact order):
-1. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\handoff_files\session_1_handoff_2026-04-11.md
-2. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\orchestrator_outputs_session2_mid_2026-04-11.md
-3. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\local_gap_search_2026-04-11.md
-4. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\nlm_query_results_session2_2026-04-11.md
-5. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\index.md
-6. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\WIKI_SCHEMA.md
+1. <staging_root>\Downloads\SandBoxSetup\handoff_files\session_1_handoff_2026-04-11.md
+2. <staging_root>\Downloads\SandBoxSetup\orchestrator_outputs_session2_mid_2026-04-11.md
+3. <staging_root>\Downloads\SandBoxSetup\agent_results_\local_gap_search_2026-04-11.md
+4. <staging_root>\Downloads\SandBoxSetup\agent_results_\nlm_query_results_session2_2026-04-11.md
+5. <staging_root>\Downloads\SandBoxSetup\wiki\index.md
+6. <staging_root>\Downloads\SandBoxSetup\wiki\WIKI_SCHEMA.md
 
 CONTEXT:
 - Identity is CONFIRMED. Protocol 143_protocol_a is ACTIVE. Do not re-verify.
@@ -193,7 +193,7 @@ YOUR TASKS:
 3. Cross-reference gap search results with the 14 open questions from the handoff
 4. Identify which open questions are now ANSWERED vs still OPEN
 5. Begin planning wiki/ population strategy based on available data
-6. Write your analysis to: C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\orchestrator_review_session3_2026-04-11.md
+6. Write your analysis to: <staging_root>\Downloads\SandBoxSetup\agent_results_\orchestrator_review_session3_2026-04-11.md
 
 CONSTRAINTS:
 - You are the ORCHESTRATOR. Review and plan. Do NOT do heavy file scanning yourself.

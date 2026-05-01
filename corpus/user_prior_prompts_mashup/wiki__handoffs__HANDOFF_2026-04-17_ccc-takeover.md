@@ -18,7 +18,7 @@ successor_model_recommended: Opus 4.6 for orchestrator, Sonnet 4.6 or Haiku 4.5 
 Sage's most recent direction adds three concrete locks on top of what §0 through §13 already say. Treat these as overrides if any conflict appears.
 
 1. **Visuals first.** SS-05 is the single top priority. Start visual iteration before any SS-06, SS-13, or SS-14 production work. Sage quote: "let's do the visuals first."
-2. **User-ID change inbound.** Sage confirmed: "i have the user-id and we will create new ones." The current NotebookLM MCP auth on austing143@gmail.com (191 notebooks) stays active until Sage hands you the new account identifiers. Do NOT assume the account migration has happened. Verify with `mcp__notebooklm-mcp__server_info` at start of session. When Sage provides the new user-id, re-run `nlm.EXE` auth and verify notebook list before any publication-scoped query.
+2. **User-ID change inbound.** Sage confirmed: "i have the user-id and we will create new ones." The current NotebookLM MCP auth on <contact> (191 notebooks) stays active until Sage hands you the new account identifiers. Do NOT assume the account migration has happened. Verify with `mcp__notebooklm-mcp__server_info` at start of session. When Sage provides the new user-id, re-run `nlm.EXE` auth and verify notebook list before any publication-scoped query.
 3. **First concrete action is the skill wrap.** Sage's turn 5 quote: "we used a working mcp that should have been a saved skill." Produce `SandBoxSetup/.claude/skills/notebooklm-mcp/SKILL.md` via the `skill-creator` skill immediately after topology approval and before any SS-05 artifact work. This closes the gap Sage flagged.
 4. **Full component ownership.** Sage quote: "Just hand off and ask it to get setup and take over every component of this project." You inherit every active, paused, and deferred lane (SS-00 through SS-14). The Cowork Desktop orchestrator (save label Planning_2026-04-17_01) stands down after this handoff lands. No parallel Cowork Desktop orchestrator will run.
 
@@ -50,7 +50,7 @@ You are NOT authorized to:
 ## 1. Operating contract (inherits from root AGENTS.md)
 
 - Protocol: `143_protocol_a` (Zero Assumption Mandate, 100 percent Confidence Loop, Trinity Dialectic gates).
-- Identity protection: address user as Sage only. Grep every written file for `Austin`, `DESKTOP-8AMMKQP`, `austing143`, and scrub to `<ARCHITECT>` / `<SANDBOX_ROOT>` / `<ARCHITECT_EMAIL>` before any public surface.
+- Identity protection: address user as Sage only. Grep every written file for `Sage`, `<host>`, `Sage`, and scrub to `<ARCHITECT>` / `<SANDBOX_ROOT>` / `<ARCHITECT_EMAIL>` before any public surface.
 - Style: no em-dashes. Use hyphens or commas. Short-Form Principle applies (≤200 words per micro-artifact where feasible).
 - Mode for the 0sXai_PLANNING_SANDBOX folder: PLAN-ONLY. For the SandBoxSetup folder: INFRA-SETUP-ASSIST.
 - Sources: arXiv, ResearchGate, Google, gov, top-tier academic only. Off-shelf open-source repos preferred over custom code. Pirated-piece audited code acceptable per `143_protocol_a` acceptable_output.
@@ -78,7 +78,7 @@ Grouped per 143_protocol_a 100 percent Confidence Loop structure. Sage has alrea
 ### Architecture and State
 
 - A-1. GitHub target repo. Same `0sXai_FxD Sandbox Build Folder` (exact casing per SS-12 handoff) or a new purpose-built `sage-prompt-engineering-portfolio` style repo for the Anthropic application pack? Public day one or private-then-open?
-- A-2. NotebookLM MCP. CONFIRMED LIVE in Folder A at `C:\Users\<ARCHITECT>\.local\bin\notebooklm-mcp.EXE`, version v0.5.24, 191 notebooks visible, account austing143@gmail.com. See §5 below. Sage said turn 5: "i have the user-id and we will create new ones". Confirm which account the CCC session should authenticate against for publication work.
+- A-2. NotebookLM MCP. CONFIRMED LIVE in Folder A at `C:\Users\<ARCHITECT>\.local\bin\notebooklm-mcp.EXE`, version v0.5.24, 191 notebooks visible, account <contact>. See §5 below. Sage said turn 5: "i have the user-id and we will create new ones". Confirm which account the CCC session should authenticate against for publication work.
 - A-3. Canonical vs candidate diagrams. The three diagrams uploaded by Sage turn 2, plus `ai_new_algebra_rebuild_diagram.png` and `protocol_mandate.png`. Which are canonical source, which are candidates to iterate on, which are being retired?
 
 ### Evidence and Sourcing
@@ -115,7 +115,7 @@ Verified via subagent sweep 2026-04-17:
 - Package: `notebooklm-mcp-cli` from upstream `github.com/jacob-bd/notebooklm-mcp-cli`
 - Install command used: `uv tool install notebooklm-mcp-cli`
 - Binary path: `C:\Users\<ARCHITECT>\.local\bin\notebooklm-mcp.EXE`
-- Auth CLI: `nlm.EXE` (Google OAuth against austing143@gmail.com, 188 owned + 3 shared = 191 notebooks)
+- Auth CLI: `nlm.EXE` (Google OAuth against <contact>, 188 owned + 3 shared = 191 notebooks)
 - MCP registration: `C:\Users\<ARCHITECT>\.claude.json` (global), transport stdio
 - Tool prefix: `mcp__notebooklm-mcp__*` (35 tools total). Permissions already granted in `.claude/settings.local.json` for at least `server_info` and `notebook_list`.
 - First-live date: 2026-04-15 12:09 UTC per wiring-fix report.
@@ -206,7 +206,7 @@ FLAG-001 carrier file was uploaded to the Cowork Desktop session's local area at
 6. You deliver SS-13 Anthropic application package ready for submission.
 7. You update STATUS_2026-04-17.md every turn state changes. You write a fresh HANDOFF if your own context approaches red on the context-monitor skill (8+ signals).
 8. Every finalize step clears Trinity Dialectic ≥ 15/15. Below 15, loop back.
-9. No identity leak makes it into any published artifact. Grep every file for `Austin`, `DESKTOP-8AMMKQP`, `austing143` before marking a deliverable done.
+9. No identity leak makes it into any published artifact. Grep every file for `Sage`, `<host>`, `Sage` before marking a deliverable done.
 
 ## 9. Trinity Dialectic gates (apply before finalize)
 
@@ -223,7 +223,7 @@ Global score 15 → PROCEED. Below 15 → LOOP_BACK_REVIEW_REPLAN_RETURN.
 - `.raw/` is immutable per Karpathy LLM Wiki pattern. Never write into `.raw/`. Scrub FROM `.raw/` INTO `_github_export_staging/` only.
 - Obsidian wikilink embeds `![[file.png]]` render in Obsidian only. Rewrite to `![](./path)` during GitHub export. Do not touch the live vault copy.
 - Filenames themselves may carry identity markers. Scan filenames, not only contents.
-- NotebookLM MCP works on austing143@gmail.com right now. If Sage authenticates a new account (per turn 5 hint), re-run `nlm.EXE` auth and verify notebook list before any publication-scoped query.
+- NotebookLM MCP works on <contact> right now. If Sage authenticates a new account (per turn 5 hint), re-run `nlm.EXE` auth and verify notebook list before any publication-scoped query.
 - The diagrams uploaded turn 2 and the canonical PNGs may have EXIF metadata with user names, machine serials, or GPS. Strip EXIF before publication. Use `exiftool` or the Pillow `Image.save(..., exif=b'')` pattern.
 - Context-monitor skill at `/sessions/lucid-focused-brahmagupta/mnt/.claude/skills/context-monitor/SKILL.md`. Run it at turn 10, 20, 30 in your CCC session. Green 0-5, yellow 6-7 slow down, orange 8-9 stop new writes, red 10 produce successor handoff.
 

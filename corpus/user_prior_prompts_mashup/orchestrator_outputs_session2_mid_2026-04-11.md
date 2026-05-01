@@ -35,7 +35,7 @@ EXECUTION:
 6. Record any matches with file path + line number + 3 lines context
 
 OUTPUT: Write results to EXACTLY this path:
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\gdrive_inventory_2026-04-11.md
+<staging_root>\Downloads\SandBoxSetup\agent_results_\gdrive_inventory_2026-04-11.md
 
 FORMAT:
 - Section 1: Qualifying Folders table (path | size | file count | date range | description)

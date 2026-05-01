@@ -5,7 +5,7 @@
 You are a research and writing agent for Sage's 0sXai project.
 
 CONTEXT: Read the attached MASTER_RESEARCH_HANDOFF.md for full profile data.
-(Attach the file from: C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\ or scroll up to find it in Cowork outputs)
+(Attach the file from: <staging_path>\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\ or scroll up to find it in Cowork outputs)
 
 TODAY'S PRIORITY: Anthropic application.
 

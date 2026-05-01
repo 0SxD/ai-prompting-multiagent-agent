@@ -32,14 +32,14 @@ Client app  ->  LiteLLM proxy  ->  upstream LLM API (Anthropic, OpenAI, etc.)
 - Indicates: the proxy itself was up enough to return an error envelope, but either (a) upstream LLM API returned 503, or (b) proxy hit its own rate limit, or (c) proxy backend (DB / Redis) was down.
 - Recovery in parent project: retry after 60-90 seconds usually worked.
 
-## 2. Mercor QC v2 architecture (inferred)
+## 2. evaluation platform QC v2 architecture (inferred)
 
 ### Stack guess
 ```
-Mercor Studio UI (web)  ->  Mercor backend  ->  LiteLLM proxy  ->  Anthropic API (most likely)
+evaluation platform Studio UI (web)  ->  evaluation platform backend  ->  LiteLLM proxy  ->  Anthropic API (most likely)
 ```
 
-The 503 error gives us: there is at minimum a LiteLLM proxy in the chain. We do not yet know if Mercor runs LiteLLM themselves or uses a hosted version.
+The 503 error gives us: there is at minimum a LiteLLM proxy in the chain. We do not yet know if evaluation platform runs LiteLLM themselves or uses a hosted version.
 
 ### QC v2 structure (decoded from observed outputs in parent project, see qc_v2_reverse_graph.md)
 
@@ -73,7 +73,7 @@ The 503 error gives us: there is at minimum a LiteLLM proxy in the chain. We do 
 ### Format drift (insight 10)
 Same input can produce different output formats across runs (prose-per-requirement vs dimension-header-per-verdict) without changing verdicts. Suggests temperature > 0 or non-deterministic format prompting in the underlying QC system prompts.
 
-## 3. Mercor QC v2 prompts (educated guesses)
+## 3. evaluation platform QC v2 prompts (educated guesses)
 
 We have NOT seen the actual prompts. Inferred from output structure:
 
@@ -124,11 +124,11 @@ Useful artifacts already in parent Rubrics Correction project:
 - `Rubric_Correction_Task_883_LinkedIn_Coach_2026-04-21_CUTPASTE.md` - first-try green
 - Multiple QC outputs across these tasks showing Part 1 + 2 + 3 verdicts in different states (green, yellow, red)
 - `justify_templates_9forms.md` - the canonical justification forms with dedup rule
-- `Mastering_Rubric_Justification_and_Review_Score_Card` - canonical Mercor scoring guide
+- `Mastering_Rubric_Justification_and_Review_Score_Card` - canonical evaluation platform scoring guide
 
 ## 5. RL signal availability
 
-Each Mercor task has a binary outcome: APPROVED or SENT BACK with edits. This is a clean reward signal:
+Each evaluation platform task has a binary outcome: APPROVED or SENT BACK with edits. This is a clean reward signal:
 - APPROVED + green QC = +1 reward
 - SENT BACK = -1 reward, with reviewer comments as the "what to fix" diff
 

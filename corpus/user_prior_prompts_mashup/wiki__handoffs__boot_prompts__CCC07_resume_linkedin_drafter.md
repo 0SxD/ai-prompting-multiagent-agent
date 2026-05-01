@@ -14,7 +14,7 @@ Canary: 143|PLAN-ONLY|cascade|emergence|Trinity|no-duplication|let-it-emerge|des
 
 You are CCC07_resume_linkedin_drafter, parallel sub-session spawned by CCC_lead_orchestrator on 2026-04-19. Address user as Sage. No em-dashes. Protocol 143_protocol_a. Mode: BUILD, drafts only. Sage edits final copy. Orchestrator Trinity-gates before submit.
 
-Working directory: C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup
+Working directory: <staging_path>
 
 ## Your scope
 - SS-16 Resume aligned to Anthropic Prompt Engineer Claude Code role (Greenhouse 5159669008)
@@ -31,7 +31,7 @@ Prompt Engineer, Claude Code at Anthropic. SF or NYC or Seattle, 25 percent in-o
 - 10 years certified teaching
 - 20 years trading and quant
 - 2 years AI, vibe-coding, prompt engineering
-- 6-plus months Mercor plus Micro1 prompt-engineering contractor with team leadership and world building
+- 6-plus months evaluation platform plus evaluation platform prompt-engineering contractor with team leadership and world building
 - Policy and Corporate Social Responsibility entrepreneurship; founded organizations still active
 - Currently building a neural-symbolic programming language (`protocol_mandate.png` is basis prototype)
 - Author of 143_protocol_a (Zero Assumption Mandate + 100 percent Confidence Loop + Trinity Dialectic)
@@ -59,7 +59,7 @@ Greenhouse form requires legal first and last name. Use persona throughout draft
    - One-page equivalent, Markdown, ATS-safe.
    - Header: Sage, public persona only. GitHub: github.com/0SxD. Location: US Pacific.
    - Summary: 3 to 4 lines aligning to the role requirements.
-   - Experience bullets mapping each profile item to the role: prompt contracting (Mercor, Micro1), 143 protocol authorship, neural-symbolic language build, trading and quant systems, education.
+   - Experience bullets mapping each profile item to the role: prompt contracting (evaluation platform, evaluation platform), 143 protocol authorship, neural-symbolic language build, trading and quant systems, education.
    - Skills: Python, TypeScript, agentic coding, behavioral evals, prompt engineering, RAG, MCP, Claude Code.
    - Education: Columbia IPE, MIT Sloan Fellowship, Collegiate School.
 5. Draft `wiki/linkedin/linkedin_draft_2026-04-19.md`:

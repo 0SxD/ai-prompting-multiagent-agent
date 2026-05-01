@@ -51,25 +51,25 @@
         **Execute Deep Sweep (DO THIS FIRST):** Run an extended filesystem sweep. You are authorized for extended runtime. Be thorough, not fast. You are the final pass — assume nothing was found unless you verify it yourself.
 
         **HARD EXCLUSIONS — DO NOT SEARCH THESE (already processed by prior agents):**
-        - `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\SageXai_72\`
-        - `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\OpenBrainLM_sandbox\`
-        - `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\`
-        - `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\raw\`
-        - `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\memory_export\`
-        - `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\handoff_files\`
-        - `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\`
+        - `<staging_path>\SageXai_72\`
+        - `<staging_path>\OpenBrainLM_sandbox\`
+        - `<staging_path>\wiki\`
+        - `<staging_path>\raw\`
+        - `<staging_path>\memory_export\`
+        - `<staging_path>\handoff_files\`
+        - `<staging_path>\agent_results_\`
         - `C:\apps_ai\OpenBrainLM\`
         - `C:\sageXai\`
         - Any `node_modules`, `.git`, `__pycache__`, `.venv`, or cache directories
 
         **SEARCH TARGETS (in this order):**
         1. `C:\apps_ai\` (EXCEPT `OpenBrainLM\` — already done): `trading_bot_build_2026\`, `nautilus_trader\`, `xD_DAI_BUILD\` (if exists), any other subdirectories
-        2. `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\` (EXCEPT `SandBoxSetup\`)
-        3. `C:\Users\Austin.DESKTOP-8AMMKQP\Documents\`
-        4. `C:\Users\Austin.DESKTOP-8AMMKQP\Desktop\`
+        2. `<staging_root>\Downloads\` (EXCEPT `SandBoxSetup\`)
+        3. `<staging_root>\Documents\`
+        4. `<staging_root>\Desktop\`
         5. `D:\` (all directories EXCEPT `D:\0sXai_SandBoxSetup_restore_point` which is a known backup)
         6. `G:\My Drive\` (Google Drive — folders >1GB from 2025/2026 only)
-        7. `C:\Users\Austin.DESKTOP-8AMMKQP\.claude\` (config, rules, hooks — architecture relevant)
+        7. `<staging_root>\.claude\` (config, rules, hooks — architecture relevant)
         8. Any other drive letters detected (`E:\`, `F:\`, etc.)
 
         **14 SEARCH TERMS (case-insensitive grep):**
@@ -101,7 +101,7 @@
   <output_contract>
     DO output in `.md` format. You MUST date all generated `.md` files at the end of the filename.
 
-    **PRIMARY OUTPUT:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\deep_sweep_2026-04-11.md`
+    **PRIMARY OUTPUT:** `<staging_path>\agent_results_\deep_sweep_2026-04-11.md`
 
     **FORMAT:**
     - Section 1: Drive/Directory Inventory (accessible? size? item count?)
@@ -162,7 +162,7 @@
     <immediate_actions>
       <action_1>
         **Run /autoresearch:learn on the corpus directory:**
-        Target: `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\SageXai_72\sageXai_72_nblm_and additional_offline_resources\`
+        Target: `<staging_path>\SageXai_72\sageXai_72_nblm_and additional_offline_resources\`
 
         This folder contains 140+ files that ARE the source corpus for the entire 0sXai operating system and FxD protocol. Contents include:
         - 17 research PDFs (agent architecture, neural networks, quantum walks, fluid dynamics, cryptography, surveillance, federated learning)
@@ -205,7 +205,7 @@
         *Hard Constraint:* If a file appears to answer a question, quote the exact passage and cite file:line. Do NOT paraphrase or infer — straight copy only.
       </action_2>
       <action_3>
-        **Map to Wiki structure.** The wiki scaffold already exists at `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\` with:
+        **Map to Wiki structure.** The wiki scaffold already exists at `<staging_path>\wiki\` with:
         - `index.md` (central catalog)
         - `WIKI_SCHEMA.md` (naming conventions, templates)
         - `concepts/` (abstract ideas, protocols, architectures)
@@ -225,7 +225,7 @@
   <output_contract>
     DO output in `.md` format. You MUST date all generated `.md` files at the end of the filename.
 
-    **PRIMARY OUTPUT:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\autoresearch_learn_corpus_2026-04-11.md`
+    **PRIMARY OUTPUT:** `<staging_path>\agent_results_\autoresearch_learn_corpus_2026-04-11.md`
 
     **FORMAT:**
     - Section 1: File Inventory Table (path | type | size | domain | summary)
@@ -285,7 +285,7 @@
     <immediate_actions>
       <action_1>
         **Full Directory Tree Catalog:**
-        Target: `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\`
+        Target: `<staging_path>\`
 
         For EVERY directory and subdirectory, produce:
         - Full path
@@ -337,7 +337,7 @@
   <output_contract>
     DO output in `.md` format. You MUST date all generated `.md` files at the end of the filename.
 
-    **PRIMARY OUTPUT:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\master_catalog_2026-04-11.md`
+    **PRIMARY OUTPUT:** `<staging_path>\agent_results_\master_catalog_2026-04-11.md`
 
     **FORMAT:**
     - Section 1: Directory Tree Overview (hierarchical, with sizes and counts)
@@ -431,7 +431,7 @@
   <output_contract>
     DO output in `.md` format. You MUST date all generated `.md` files at the end of the filename.
 
-    **PRIMARY OUTPUT:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\nlm_autoresearch_3f16ce1f_2026-04-11.md`
+    **PRIMARY OUTPUT:** `<staging_path>\agent_results_\nlm_autoresearch_3f16ce1f_2026-04-11.md`
 
     **FORMAT:**
     - Section 1: Open Question Answers (Q1-Q14, each: question | NLM response verbatim | confidence | status: ANSWERED/PARTIAL/NOT_IN_BRAIN)
@@ -520,7 +520,7 @@
   <output_contract>
     DO output in `.md` format. You MUST date all generated `.md` files at the end of the filename.
 
-    **PRIMARY OUTPUT:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\omx_setup_report_2026-04-11.md`
+    **PRIMARY OUTPUT:** `<staging_path>\agent_results_\omx_setup_report_2026-04-11.md`
 
     **FORMAT:**
     - Section 1: Installation Status (version, path, state directory)
@@ -584,7 +584,7 @@
         **NT-BTC Whale Scanner Architecture Synthesis:**
         1. Read ALL relevant files in `C:\apps_ai\trading_bot_build_2026\` — this is the existing trading bot project
         2. Read `C:\apps_ai\nautilus_trader\` project structure — this is the NautilusTrader integration
-        3. Cross-reference with `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\SageXai_72\sageXai_72_nblm_and additional_offline_resources\fxd_implementation_plan.md`
+        3. Cross-reference with `<staging_path>\SageXai_72\sageXai_72_nblm_and additional_offline_resources\fxd_implementation_plan.md`
         4. Identify the whale detection logic: what signals, what thresholds, what data sources
         5. Map the architecture: data ingestion -> signal detection -> execution -> risk management
 
@@ -626,7 +626,7 @@
   <output_contract>
     DO output in `.md` format. You MUST date all generated `.md` files at the end of the filename.
 
-    **PRIMARY OUTPUT:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\agent_results_\defi_arbitrage_research_2026-04-11.md`
+    **PRIMARY OUTPUT:** `<staging_path>\agent_results_\defi_arbitrage_research_2026-04-11.md`
 
     **FORMAT:**
     - Section 1: NT-BTC Whale Scanner — Current State (what exists) + Architecture Map

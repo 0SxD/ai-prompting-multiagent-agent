@@ -51,7 +51,7 @@
     <mission>Set up OpenRouter as a swappable model backend for the 0sXai agent system. The integration must use the OpenAI-compatible API layer, support model routing and fallback chains, and be fully operational by morning. This is an UNATTENDED deployment — minimize questions, maximize autonomous execution.</mission>
 
     <sandbox_isolation>
-      **ALL work MUST be contained in:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\openrouter_bridge\`
+      **ALL work MUST be contained in:** `<staging_root>\Downloads\SandBoxSetup\openrouter_bridge\`
 
       You are STRICTLY FORBIDDEN from:
       - Modifying ANY file outside `openrouter_bridge/`
@@ -190,7 +190,7 @@
   <output_contract>
     DO output in `.md` format where applicable. Date generated files.
 
-    **ALL OUTPUT CONTAINED IN:** `C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\openrouter_bridge\`
+    **ALL OUTPUT CONTAINED IN:** `<staging_root>\Downloads\SandBoxSetup\openrouter_bridge\`
 
     **Expected file tree after completion:**
     ```

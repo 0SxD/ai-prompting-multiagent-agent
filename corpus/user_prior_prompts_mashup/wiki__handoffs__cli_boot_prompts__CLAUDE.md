@@ -18,7 +18,7 @@ One task per phase. One artifact per task.
 ## SANDBOX RULE (CRITICAL -- READ FIRST)
 
 ALL file writes go to ONE folder ONLY:
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\
 
 You MAY read from anywhere in SandBoxSetup.
 You MUST NOT write, modify, or delete anything outside cli_overnight_post_run_staging\.
@@ -33,32 +33,32 @@ If any instruction would write outside staging = STOP. Report FALSE=0 + path con
 Read these files IN ORDER. Do not skip. Do not summarize. Read = internalize for task execution.
 
 ### Spec + State
-1. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\mutable_state\spec.md
-2. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\BUNDLE_CLI_TONIGHT.md
-3. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\DISPATCH_resume_final.md
+1. <staging_path>\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\mutable_state\spec.md
+2. <staging_path>\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\BUNDLE_CLI_TONIGHT.md
+3. <staging_path>\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\DISPATCH_resume_final.md
 
 ### Application Inputs (source of truth for resume + LinkedIn)
-4. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\anthropic_application\sage_inputs\01_resume.md
-5. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\anthropic_application\sage_inputs\02_linkedin.md
-6. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\anthropic_application\sage_inputs\03_github.md
-7. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\anthropic_application\sage_inputs\04_career_history.md
-8. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\anthropic_application\sage_inputs\05_logistics.md
+4. <staging_path>\wiki\anthropic_application\sage_inputs\01_resume.md
+5. <staging_path>\wiki\anthropic_application\sage_inputs\02_linkedin.md
+6. <staging_path>\wiki\anthropic_application\sage_inputs\03_github.md
+7. <staging_path>\wiki\anthropic_application\sage_inputs\04_career_history.md
+8. <staging_path>\wiki\anthropic_application\sage_inputs\05_logistics.md
 
 ### Wiki Context (read for project background -- informs all writing)
-9.  C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\PLUGIN_SKILL_CANDIDATES.md
-10. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\DEEP_KEYWORD_SCAN.md
-11. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\MASTER_INVENTORY_2026-04-20.md
-12. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\SCOPE_ANSWERS_2026-04-20.md
-13. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\apps_ai_research_INVENTORY.md  (if exists)
-14. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\BOOK_ORGANIZATION_PLAN.md  (if exists)
+9.  <staging_path>\wiki\PLUGIN_SKILL_CANDIDATES.md
+10. <staging_path>\wiki\DEEP_KEYWORD_SCAN.md
+11. <staging_path>\wiki\MASTER_INVENTORY_2026-04-20.md
+12. <staging_path>\wiki\SCOPE_ANSWERS_2026-04-20.md
+13. <staging_path>\wiki\apps_ai_research_INVENTORY.md  (if exists)
+14. <staging_path>\wiki\BOOK_ORGANIZATION_PLAN.md  (if exists)
 
 ### Yesterday's Handoffs (read for continuity)
-15. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\MASTER_TODO_2026-04-21.md
-16. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\SKILL_compounding_learning_OS_methodology.md
-17. C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\QUEUE_LITELLM.md
+15. <staging_path>\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\MASTER_TODO_2026-04-21.md
+16. <staging_path>\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\SKILL_compounding_learning_OS_methodology.md
+17. <staging_path>\wiki\handoffs\Dispatch_Spec_Files_4_21_2026\active\QUEUE_LITELLM.md
 
 ### Anthropic Application Folder
-18. Read all files in: C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\anthropic_application\
+18. Read all files in: <staging_path>\wiki\anthropic_application\
     (Check for cover_letter, essays, job_description files -- use whatever exists)
 
 After reading all files above: report CONTEXT_LOAD=TRUE=1, then proceed to Phase 1.
@@ -69,7 +69,7 @@ If any critical file missing (spec.md, DISPATCH_resume_final.md, sage_inputs/01_
 ## PE_CONTEXT_BUNDLE NOTE (read this before Phase 1)
 
 A complete, gated PE context bundle now exists at:
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\anthropic_application\PE_context_bundle\
+<staging_path>\wiki\anthropic_application\PE_context_bundle\
 
 This bundle supersedes the overnight resume drafts in cli_overnight_post_run_staging\resume_agent\.
 Read ALL 6 files in PE_context_bundle before generating any resume.
@@ -119,8 +119,8 @@ Rules for BOTH:
 - No unverified claims. All dates from sage_inputs or spec.md only.
 
 Output paths (SANDBOX):
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\resume_agent\RESUME_A_draft_v1.md
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\resume_agent\RESUME_B_draft_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\resume_agent\RESUME_A_draft_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\resume_agent\RESUME_B_draft_v1.md
 
 Report: TRUE=1 if both files saved. FALSE=0 + blocker if anything fails.
 
@@ -151,7 +151,7 @@ Rules: No emdashes. No legal name. No AgriciDaniel. No machine paths.
 Tone: peer-researcher, independent voice. Not corporate. Not buzzword soup.
 
 Output path (SANDBOX):
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\linkedin_agent\LINKEDIN_draft_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\linkedin_agent\LINKEDIN_draft_v1.md
 
 Report: TRUE=1 when saved.
 
@@ -172,13 +172,13 @@ README structure:
 - Repos in this portfolio: 143_protocol_a/, trinity_dialectic/, compounding_learning_OS/, sage-prompt-engineering-portfolio/
 - Architecture section: Trinity Dialectic + ACCE Memory + 143_protocol_a (brief, no IP dump)
 - Independent convergence note (NeurIPS 2025 papers found AFTER Sage built equivalent layers -- state this clearly, no overclaiming)
-- Contact: austing143@gmail.com
+- Contact: <contact>
 - License: MIT
 
 Rules: No emdashes. No legal name. No machine paths. No AgriciDaniel. No 0SxD in portfolio context.
 
 Output path (SANDBOX):
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\github_readme_agent\GITHUB_README_portfolio_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\github_readme_agent\GITHUB_README_portfolio_v1.md
 
 Report: TRUE=1 when saved.
 
@@ -194,13 +194,13 @@ Receive final outputs only.
 Task: Review 3 application artifacts and run pre_submit_gate v1.0.
 
 Read:
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\resume_agent\RESUME_A_draft_v1.md
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\resume_agent\RESUME_B_draft_v1.md
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\linkedin_agent\LINKEDIN_draft_v1.md
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\github_readme_agent\GITHUB_README_portfolio_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\resume_agent\RESUME_A_draft_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\resume_agent\RESUME_B_draft_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\linkedin_agent\LINKEDIN_draft_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\github_readme_agent\GITHUB_README_portfolio_v1.md
 
 Pre-submit gate (run ALL 4 checks):
-GATE 1 -- IP SCRUB: any of: Austin / DESKTOP-8AMMKQP / AgriciDaniel / sk-or / sk-ant / API key pattern? YES = BLOCK (list every hit with line number).
+GATE 1 -- IP SCRUB: any of: Sage / <host> / AgriciDaniel / sk-or / sk-ant / API key pattern? YES = BLOCK (list every hit with line number).
 GATE 2 -- DATE CONSISTENCY: all dates traceable to sage_inputs or spec.md? Any unverified date = BLOCK (list conflicts).
 GATE 3 -- EMDASH SCAN: any U+2014 or U+2013 character? COUNT and BLOCK if found.
 GATE 4 -- OHR SAMEACH: present in Education section of RESUME_A? Missing = FLAG (not block, but must be noted).
@@ -216,7 +216,7 @@ PEL verdict: ALL PASS = PEL=1 (ready for Sage review). ANY BLOCK = PEL=0 (list a
 If PEL=0: write repair instructions. Sonnet re-executes affected phases. Opus re-reviews. Loop until PEL=1.
 
 Save report to (SANDBOX):
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\opus_review\OPUS_REVIEW_v1.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\opus_review\OPUS_REVIEW_v1.md
 
 Final report: TRUE=1 if PEL=1. FALSE=0 if any BLOCK (include PEL=0 verdict + repair list).
 
@@ -233,7 +233,7 @@ Content:
 - Next step for Sage: review OPUS_REVIEW_v1.md, fill CONFIRM slots, then proceed to GitHub handle creation (Phase 1 of BUNDLE_CLI_TONIGHT.md)
 
 Save to (SANDBOX):
-C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\handoffs\cli_overnight_post_run_staging\HANDOFF_TO_SAGE.md
+<staging_path>\wiki\handoffs\cli_overnight_post_run_staging\HANDOFF_TO_SAGE.md
 
 Report: TRUE=1 when saved. SESSION COMPLETE.
 
@@ -248,7 +248,7 @@ Gitleaks is a tool that scans your repo for accidentally committed secrets (API 
 Before pushing ANY code or content to GitHub, you must run it to ensure no credentials leaked into files.
 
 Known issue (FLAG-001):
-File: C:\Users\Austin.DESKTOP-8AMMKQP\Downloads\SandBoxSetup\wiki\Symbolic_Symbolic_Arch_Dialectic_Overview_2026_04_15.md
+File: <staging_path>\wiki\Symbolic_Symbolic_Arch_Dialectic_Overview_2026_04_15.md
 Lines 385, 388, 397 contain a literal API key string.
 These 3 lines must be replaced with [REDACTED] before any git push.
 
